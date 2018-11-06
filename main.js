@@ -6,6 +6,9 @@ var server = express()
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
+app.commandLine.appendSwitch("disable-gpu")
+app.commandLine.appendArgument("disable-gpu")
+
 const path = require('path');
 const url = require('url');
 
@@ -28,6 +31,7 @@ server.get('/distance', (req, res) => {
 function createWindow () {
   // Create the browser window.
     mainWindow = new BrowserWindow({width: 768, height: 1024});
+    mainWindow.setFullScreen(true)
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
