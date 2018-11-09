@@ -1,29 +1,25 @@
 {
-  "name": "electron-quick-start",
+  "name": "smart-mirror-server",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A smart mirror",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/kuoa/smart-mirror-server",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "smart",
+    "mirror",
+    "electron"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "kuoa",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.5"
+    "electron": "^1.4.1"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "jquery": "^3.3.1",
-    "node-hotspot": "^0.1.7",
-    "node-wifi": "^2.0.4",
-    "vk-io": "^4.0.0-rc.5"
+    "@types/jquery": "^2.0.39",
+    "express": "^4.16.4",
+    "weather-js": "^2.0.0"
   }
 }
